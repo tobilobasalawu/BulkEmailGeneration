@@ -5,7 +5,7 @@ from email.mime.image import MIMEImage
 import pandas as pd
 
 # Load your list of users (CSV or Excel file with columns like 'Name' and 'Email')
-users = pd.read_csv(r'C:\Users\oluwa\Documents\hpScript\Users.csv')
+users = pd.read_csv(r'C:\Users\oluwa\Documents\BulkEmailGeneration\Users.csv')
 
 # Email server (Outlook example)
 SMTP_SERVER = 'smtp.gmail.com'  # For Gmail
@@ -22,7 +22,7 @@ server.login(SENDER_EMAIL, SENDER_PASSWORD)
 for index, user in users.iterrows():
     # Create the email
     msg = MIMEMultipart()
-    msg['From'] = 'Happy People care <tobisal.dev@gmail.com>'
+    msg['From'] = 'Happy People Care <tobisal.dev@gmail.com>'
     msg['To'] = user['Email']
     msg['Subject'] = "We're Here to Support You - Happy People Care"
 
@@ -124,7 +124,7 @@ for index, user in users.iterrows():
                     font-size: 12px; /* Reduce font size for smaller screens */
                 }}
                 .icon-section img {{
-                    width: 18px;
+                    width: 15px;
                     padding-right: 10px;
                     padding-top: 5px;
                 }}
@@ -133,7 +133,7 @@ for index, user in users.iterrows():
     </head>
     <body>
         <div class="container">
-            <h1>Dear {user['Name']},</h1>
+            <p>Dear {user['Name']},</p>
             <p>I hope this message finds you well, especially during this busy time of the year!</p>
             <p>I wanted to remind you that Happy People Care is here to support you with all your staffing needs, whether temporary or permanent. We understand how critical it is to have the right team in place, particularly during high-demand periods, and we are ready to assist. We offer competitive rates to suit your budget and have got your back even when you need a last-minute cover for urgent staffing needs.</p>
             <p>We offer a range of services designed to meet your unique requirements, including:</p>
@@ -143,20 +143,21 @@ for index, user in users.iterrows():
             </ul>
             <p>We understand you may have a preferred agency or perhaps haven't used an agency before, but we encourage you to try Happy People Care—we promise to wow you! Please don't hesitate to reach out if there's anything we can do to assist. We look forward to collaborating with you and providing the high-quality staffing support you expect.</p>
             <div class="footer">
-                <p style="font-size: 14px; color: #B54826;">Kind Regards,<br>Happy People Care</p>
+                <p style="font-size: 14px; color: #B54826;">Kind Regards,<br><br>Happy People Care</p>
                 <div class="footer-sec">
                     <div class="icon-section-mid">
                         <img src="https://ci3.googleusercontent.com/meips/ADKq_NZMUY0OEeTPq-e4LU5laTbaObRbLfNryU9Diyix7C7Ftb3MIUbPbUXe_mmXKwnaSjcPvfkEhVJBtWOmWx5xp8xVOJzCD0F-pDrCYJqeWzBg6UL9oHanb-48hig4RwT7Fz4LKH2UJOWlzB0tek67Kg=s0-d-e1-ft#https://signatures-cam.300media.co.uk/wp-content/uploads/2024/01/Happy-People-Care-01.png" alt="Company Logo"><br>
                     </div>
                     <div class='sec-pace'>
                         <div class="icon-section">
-                            <p>01217512426, 07423377255, 07570528707</p>
+                            <p><b>Office</b>: 01217512426<br><b>Mobile</b>: 07423377255, 07570528707</p>
+                            
                         </div>
                         <div class="icon-section">
                             <a href="mailto:info@happypeoplecare.co.uk">info@happypeoplecare.co.uk</a>
                         </div>
                         <div class="icon-section">
-                            <a href="www.happypeoplecare.co.uk">www.happypeoplecare.co.uk</a>
+                            <a href="https://happypeoplecare.co.uk/">www.happypeoplecare.co.uk</a>
                         </div>
                         <div class="icon-section">
                             <p>Fort Dunlop, Fort Parkway, Birmingham,<br>West Midlands, B24 9FE</p>

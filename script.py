@@ -5,13 +5,13 @@ from email.mime.image import MIMEImage
 import pandas as pd
 
 # Load your list of users (CSV or Excel file with columns like 'Name' and 'Email')
-users = pd.read_csv(r'C:\Users\oluwa\Documents\BulkEmailGeneration\Users.csv')
+users = pd.read_csv(r'Users.csv')
 
 # Email server (Outlook example)
 SMTP_SERVER = 'smtp.gmail.com'  # For Gmail
 SMTP_PORT = 587
-SENDER_EMAIL = 'tobisal.dev@gmail.com'  # Update with your Gmail address
-SENDER_PASSWORD = 'ouma pmxo ghfr yjwm'  # Update with your Gmail password
+SENDER_EMAIL = 'username@gmail.com'  # Update with your Gmail address
+SENDER_PASSWORD = 'password'  # Update with your Gmail password
 
 # Create server connection
 server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
@@ -22,9 +22,9 @@ server.login(SENDER_EMAIL, SENDER_PASSWORD)
 for index, user in users.iterrows():
     # Create the email
     msg = MIMEMultipart()
-    msg['From'] = 'Happy People Care <tobisal.dev@gmail.com>'
+    msg['From'] = 'CompanyName <username@gmail.com>'
     msg['To'] = user['Email']
-    msg['Subject'] = "We're Here to Support You - Happy People Care"
+    msg['Subject'] = "Welcome to our platform"
 
     
     # Personalize the body

@@ -24,7 +24,7 @@ for index, user in users.iterrows():
     msg = MIMEMultipart()
     msg['From'] = 'CompanyName <username@gmail.com>'
     msg['To'] = user['Email']
-    msg['Subject'] = "Welcome to our platform"
+    msg['Subject'] = "Subject"
 
     
     # Personalize the body
@@ -134,41 +134,36 @@ for index, user in users.iterrows():
     <body>
         <div class="container">
             <p>Dear {user['Name']},</p>
-            <p>I hope this message finds you well, especially during this busy time of the year!</p>
-            <p>I wanted to remind you that Happy People Care is here to support you with all your staffing needs, whether temporary or permanent. We understand how critical it is to have the right team in place, particularly during high-demand periods, and we are ready to assist. We offer competitive rates to suit your budget and have got your back even when you need a last-minute cover for urgent staffing needs.</p>
-            <p>We offer a range of services designed to meet your unique requirements, including:</p>
-            <ul>
-                <li>Well-trained Care Assistants and Support Workers</li>
-                <li>Qualified RGNs, RMNs, and Other Specialist Nurses</li>
-            </ul>
-            <p>We understand you may have a preferred agency or perhaps haven't used an agency before, but we encourage you to try Happy People Care—we promise to wow you! Please don't hesitate to reach out if there's anything we can do to assist. We look forward to collaborating with you and providing the high-quality staffing support you expect.</p>
+            <p>Welcome to the Platform!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="footer">
-                <p style="font-size: 14px; color: #B54826;">Kind Regards,<br><br>Happy People Care</p>
+                <p style="font-size: 14px; color: #B54826;">Kind Regards,<br><br>Company Name</p>
                 <div class="footer-sec">
                     <div class="icon-section-mid">
-                        <img src="https://ci3.googleusercontent.com/meips/ADKq_NZMUY0OEeTPq-e4LU5laTbaObRbLfNryU9Diyix7C7Ftb3MIUbPbUXe_mmXKwnaSjcPvfkEhVJBtWOmWx5xp8xVOJzCD0F-pDrCYJqeWzBg6UL9oHanb-48hig4RwT7Fz4LKH2UJOWlzB0tek67Kg=s0-d-e1-ft#https://signatures-cam.300media.co.uk/wp-content/uploads/2024/01/Happy-People-Care-01.png" alt="Company Logo"><br>
+                        <img src="" alt="Company Logo"><br>
                     </div>
                     <div class='sec-pace'>
                         <div class="icon-section">
-                            <p><b>Office</b>: 01217512426<br><b>Mobile</b>: 07423377255, 07570528707</p>
+                            <p><b>Phone Numbers</b>: 123456789</p>
                             
                         </div>
                         <div class="icon-section">
-                            <a href="mailto:info@happypeoplecare.co.uk">info@happypeoplecare.co.uk</a>
+                            <a href="mailto:username@gmail.com">username@gmail.com</a>
                         </div>
                         <div class="icon-section">
-                            <a href="https://happypeoplecare.co.uk/">www.happypeoplecare.co.uk</a>
+                            <a href="https://companywebsite.com">www.companywebsite.com</a>
                         </div>
                         <div class="icon-section">
-                            <p>Fort Dunlop, Fort Parkway, Birmingham,<br>West Midlands, B24 9FE</p>
+                            <p>London, United Kingdom<br>Location, Address</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="background-color: #B54826; font-weight: bold; height: 40px;">
-                <p style="color: white; font-size:12px; padding-top: 10px; padding-left: 8px;">Quality Staffing and Compassionate Care</p>
+                <p style="color: white; font-size:12px; padding-top: 10px; padding-left: 8px;">Thank for choosing us</p>
             </div>
-            <p style="font-size: 10px; max-width: 550px;">This e-mail is only for the above addressee(s). It may contain confidential or privileged information. If you are not an addressee you must not copy, distribute, disclose or use any of the information in it or any attachments. If you have received it in error please notify the sender and delete it immediately. Registered Name: Happy People Care Limited, Registration Number: 15340377</p>
+            <p style="font-size: 10px; max-width: 550px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </body>
     </html>

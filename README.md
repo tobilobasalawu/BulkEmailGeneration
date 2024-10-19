@@ -50,8 +50,8 @@ The script uses `pandas` for handling CSV data and `smtplib` for sending emails.
 
    | Name    | Email              |
    |---------|--------------------|
-   | Alice   | alice@example.com   |
-   | Bob     | bob@example.com     |
+   | John   | johndoe@example.com |
+   | Toby   | toby@example.com    |
 
 2. **Update script.py**: In the `script.py` file:
    - Replace the `SENDER_EMAIL` and `SENDER_PASSWORD` with your Gmail address and password.
@@ -85,7 +85,7 @@ You can replace these with your Gmail credentials.
 
 ### 4. Personalizing Email Content
 
-The email content in the script is dynamically generated using the user's name and your custom message from the `MailContents(html).html` file. Make sure to copy the HTML content from `MailContents(html).html` and replace the `msg.attach` section in `script.py`.
+The email content in the script is dynamically generated using the user's name and your custom message from the `MailContents(html).html` file. Make sure to copy the HTML content from `MailContents(html).html` and replace the `html` section in `script.py`.
 
 ---
 
